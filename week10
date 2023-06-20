@@ -7,7 +7,7 @@ class Graph:
         self.adjacency_matrix[u][v] = 1
         self.adjacency_matrix[v][u] = 1
 
-    def graph_col(self):
+    def graph_coloring(self):
         result = [-1] * self.vertices
         result[0] = 0
 
@@ -30,4 +30,4 @@ if __name__ == "__main__":
     g.add_edge(2, 3)
     g.add_edge(3, 4)
 
-    g.graph_col()
+    g.graph_coloring()
